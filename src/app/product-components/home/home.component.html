@@ -1,0 +1,18 @@
+
+<div class="container company">
+  <div class="row" *ngIf="myCompany.isOpen">
+      <div class="col-4">
+          <div class="company-logo">
+            <img [src]="myCompany.logo" alt="company logo" width="200" height="150">
+          </div>
+        </div>
+        <div class="col-8">
+            <h2 class="company-name"> {{myCompany.name}} </h2>
+            <h5 class="about-company"> {{myCompany.about}} </h5>
+            <div class="company-tags">
+              <h6 class="tag" *ngFor="let tag of myCompany.tags"> {{ tag }} </h6>
+            </div>
+        </div>
+  </div>
+  <button (click)="ToggleActiveStatus()">Show/Hide</button>
+</div>

@@ -1,0 +1,11 @@
+.company-tags {
+  display: flex;
+  // justify-content: space-between;
+  align-items: flex-start;
+
+  .tag {
+    margin-right: 10px;
+    border: 1px solid gray;
+    padding: 2px
+  }
+}

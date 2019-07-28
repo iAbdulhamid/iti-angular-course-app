@@ -7,6 +7,7 @@ import { HeaderComponent } from './layout-components/header/header.component';
 import { FooterComponent } from './layout-components/footer/footer.component';
 import { ContentComponent } from './layout-components/content/content.component';
 import { SidebarComponent } from './layout-components/sidebar/sidebar.component';
+import { HomeComponent } from './product-components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SidebarComponent } from './layout-components/sidebar/sidebar.component'
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    SidebarComponent
+    SidebarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
